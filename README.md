@@ -26,6 +26,26 @@ DEBUG=expressjs-sample:* npm start
 
 Go to `https://localhost:3000` within your web browser
 
+create the following files:
+
+.ebextensions/nodecommand.config
+```
+  aws:elasticbeanstalk:container:nodejs:
+    NodeCommand: "npm start"
+```
+
+.ebextensions/staticfiles.config
+```
+option_settings:
+  aws:elasticbeanstalk:container:nodejs:staticfiles:
+    /public: /public
+```
+
+To upload to S3 upload the contents of your web-app (not the folder
+itself), ensure you turn on hidden files and include .ebextensions in
+the zip
+
+
 # Credits
 
 Space background borrowed from here:
