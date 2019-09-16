@@ -41,10 +41,11 @@ option_settings:
     /public: /public
 ```
 
-To upload to S3 upload the contents of your web-app (not the folder
-itself), ensure you turn on hidden files and include .ebextensions in
-the zip
+When uploading to Elastic Beanstalk zip the contents of the root project
+folder and include `.ebextensions`. Excluding `.git` since this could
+contain sensitive credentials.
 
+![](https://github.com/ExamProCo/expressjs-sample/blob/master/docs/zipping.jpg)
 
 # Credits
 
