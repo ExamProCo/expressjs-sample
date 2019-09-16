@@ -47,6 +47,12 @@ contain sensitive credentials.
 
 ![](https://github.com/ExamProCo/expressjs-sample/blob/master/docs/zipping.jpg)
 
+# Show your hidden files and folders
+Omitting `.ebextensions` is the most common reason for failed
+deployments to Elastic Beanstalk
+
+You may need to show all hidden files and folders. On OSX you can view all hidden files and folders by pressing `Command + Shift + .`
+
 # Credits
 
 Space background borrowed from here:
